@@ -510,6 +510,8 @@ footer {
 }
 
 .resume-viewer {
+  max-width: 900px;
+  margin: 0 auto;
   background: #f4f6fb;
   border-radius: 14px;
   overflow: hidden;
@@ -701,6 +703,10 @@ footer {
     min-width: 46px;
   }
 
+  .social-circle .fa-github {
+    font-size: 1.8rem;
+  }
+
   .resume-button {
     flex: 0 0 auto;
     justify-content: center;
@@ -782,7 +788,7 @@ footer {
   }
 
   .resume-shell {
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 0.75rem;
   }
 
   .resume-topbar {
