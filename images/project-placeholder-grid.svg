@@ -1,0 +1,18 @@
+<svg width="1200" height="720" viewBox="0 0 1200 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="720" rx="36" fill="#EFF3FA"/>
+  <rect x="88" y="88" width="1024" height="544" rx="28" fill="#FFFFFF"/>
+  <rect x="146" y="146" width="274" height="170" rx="20" fill="#E9F1FF"/>
+  <rect x="462" y="146" width="274" height="170" rx="20" fill="#F3ECFF"/>
+  <rect x="778" y="146" width="274" height="170" rx="20" fill="#E8F7FF"/>
+  <rect x="146" y="356" width="906" height="22" rx="11" fill="#D6E2FF"/>
+  <rect x="146" y="398" width="840" height="18" rx="9" fill="#E3EAF7"/>
+  <rect x="146" y="432" width="782" height="18" rx="9" fill="#E3EAF7"/>
+  <rect x="146" y="494" width="196" height="44" rx="22" fill="url(#pill)"/>
+  <text x="146" y="574" font-family="Montserrat, Arial, sans-serif" font-size="42" font-weight="700" fill="#4B4F68">PROJECT PLACEHOLDER</text>
+  <defs>
+    <linearGradient id="pill" x1="146" y1="494" x2="342" y2="538" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A11CB"/>
+      <stop offset="1" stop-color="#2575FC"/>
+    </linearGradient>
+  </defs>
+</svg>
