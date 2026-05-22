@@ -125,7 +125,6 @@ header {
   gap: 1rem;
 }
 
-.header-cta-row a:not(.resume-button),
 .social-circle {
   width: 32px;
   height: 32px;
@@ -144,7 +143,6 @@ header {
   transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.header-cta-row a:not(.resume-button):hover,
 .social-circle:hover {
   transform: translateY(-2px);
   background: rgba(255, 255, 255, 0.2);
@@ -155,15 +153,7 @@ header {
   height: 1.35rem;
   display: block;
   flex: 0 0 auto;
-  fill: none;
-  stroke: currentColor;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 2.15;
-}
-
-.header-icon * {
-  vector-effect: non-scaling-stroke;
+  fill: currentColor;
 }
 
 .resume-button {
@@ -681,7 +671,6 @@ footer {
     width: 1.55rem;
     height: 1.55rem;
   }
-
 }
 
 @media screen and (max-width: 768px) {
