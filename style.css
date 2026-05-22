@@ -155,7 +155,15 @@ header {
   height: 1.35rem;
   display: block;
   flex: 0 0 auto;
-  fill: currentColor;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.15;
+}
+
+.header-icon * {
+  vector-effect: non-scaling-stroke;
 }
 
 .resume-button {
@@ -673,6 +681,7 @@ footer {
     width: 1.55rem;
     height: 1.55rem;
   }
+
 }
 
 @media screen and (max-width: 768px) {
