@@ -885,8 +885,17 @@ footer {
   }
 
   .modal-stage-iframe {
-        height: 300px;
+        height: 520px;
       }
+
+  .modal {
+    overflow-y: auto;
+  }
+
+  .modal-content {
+    max-height: none;
+    overflow: visible;
+  }
 
   .modal-content h2 {
     font-size: 1.18rem;
