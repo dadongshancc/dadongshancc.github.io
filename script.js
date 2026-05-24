@@ -220,10 +220,13 @@ function setLinkState(element, url) {
 }
 
 function resolveInteractiveSrc(project) {
-  if (window.location.protocol === "file:" && project.interactiveSrcLocal) {
-    return project.interactiveSrcLocal;
+  const src = window.location.protocol === "file:" && project.interactiveSrcLocal
+    ? project.interactiveSrcLocal
+    : project.interactiveSrc;
+  if (!src) {
+    return "";
   }
-  return project.interactiveSrc;
+  return `${src}${src.includes("?") ? "&" : "?"}embed=1`;
 }
 
 function renderModalStage(project) {
