@@ -413,6 +413,129 @@ header {
   background: #e3ebff;
 }
 
+.card-spotlight {
+  padding: 0;
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbff 100%);
+}
+
+.spotlight-cover {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.spotlight-cover-top {
+  height: 220px;
+  display: grid;
+  grid-template-columns: 1fr 1.35fr 1fr;
+  background:
+    radial-gradient(circle at top left, rgba(255, 255, 255, 0.24), transparent 40%),
+    linear-gradient(135deg, #09090b 0%, #3b82f6 52%, #8b5cf6 100%);
+}
+
+.spotlight-panel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+  padding: 1rem;
+}
+
+.spotlight-panel::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.18), transparent 28%),
+    linear-gradient(160deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+}
+
+.spotlight-panel::after {
+  content: "";
+  position: absolute;
+  inset: 12% 10%;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(3px);
+}
+
+.spotlight-panel.panel-core::after {
+  inset: 8% 6%;
+}
+
+.spotlight-panel span {
+  position: relative;
+  z-index: 1;
+  font-size: 0.76rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.spotlight-cover-bottom {
+  position: relative;
+  padding: 0.95rem 1rem 0.9rem;
+  display: block;
+}
+
+.spotlight-actions {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.spotlight-copy {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.spotlight-copy h3 {
+  padding: 0;
+  font-size: 1.28rem;
+  line-height: 1.3;
+  color: #1f2937;
+}
+
+.spotlight-description {
+  font-size: 0.96rem;
+  line-height: 1.75;
+  max-height: 8.85em;
+  overflow: hidden;
+  color: #7b8190;
+  -webkit-mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.88) 76%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 0%, #000 58%, rgba(0, 0, 0, 0.88) 76%, transparent 100%);
+}
+
+.spotlight-github,
+.spotlight-douyin {
+  width: auto;
+  height: auto;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0;
+  background: transparent;
+  color: #5b21b6;
+  text-decoration: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  box-shadow: none;
+  font-size: 1.18rem;
+}
+
+.spotlight-github:hover,
+.spotlight-douyin:hover {
+  transform: translateY(-2px);
+  background: transparent;
+}
+
 .publications-list {
   display: flex;
   flex-direction: column;
@@ -565,8 +688,8 @@ footer {
   inset: 0;
   background: rgba(0, 0, 0, 0.55);
   z-index: 2000;
-  padding: 2rem 1rem;
-  overflow-y: auto;
+  padding: 0.85rem;
+  overflow: hidden;
 }
 
 .modal.is-open {
@@ -574,13 +697,15 @@ footer {
 }
 
 .modal-content {
-  max-width: 860px;
-  margin: 0 auto;
+    max-width: 760px;
+    max-height: calc(100vh - 1.7rem);
+    margin: 0 auto;
   background: var(--surface);
   border-radius: 16px;
-  padding: 1.25rem 1.25rem 1.5rem;
+  padding: 0.8rem 0.85rem 0.9rem;
   position: relative;
   box-shadow: var(--shadow-strong);
+  overflow: hidden;
 }
 
 .close-button {
@@ -598,7 +723,22 @@ footer {
 }
 
 .modal-media-wrapper {
-  margin-bottom: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.modal-stage-shell {
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #e6ebf2;
+  background: #f8fafc;
+}
+
+.modal-stage-iframe {
+      width: 100%;
+      height: 392px;
+    border: 0;
+    display: block;
+  background: #ffffff;
 }
 
 .modal-image,
@@ -611,14 +751,20 @@ footer {
 }
 
 .modal-content h2 {
-  margin-bottom: 0.8rem;
-  padding-right: 3rem;
-}
+    margin-bottom: 0.45rem;
+    padding-right: 3rem;
+    font-size: 1.34rem;
+  }
 
 .modal-description {
-  color: var(--muted);
-  white-space: pre-line;
-}
+    color: var(--muted);
+    line-height: 1.6;
+    font-size: 0.9rem;
+  }
+
+.modal-description p + p {
+    margin-top: 0.55rem;
+  }
 
 .modal-links {
   display: flex;
@@ -643,12 +789,35 @@ footer {
   background: #e3ebff;
 }
 
+.modal-links a.is-disabled {
+  background: #f2f4f8;
+  color: #9aa4b2;
+  pointer-events: none;
+}
+
 @media screen and (max-width: 900px) {
   .section,
   .header-content {
     padding-left: 1rem;
     padding-right: 1rem;
   }
+
+  .spotlight-cover-top {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .spotlight-copy h3 {
+    font-size: 1.16rem;
+  }
+
+  .spotlight-description {
+    font-size: 0.92rem;
+    max-height: 8.2em;
+  }
+
+  .modal-stage-iframe {
+        height: 348px;
+      }
 }
 
 @media screen and (min-width: 769px) and (max-width: 980px) {
@@ -714,6 +883,10 @@ footer {
     font-size: 2rem;
     text-align: center;
   }
+
+  .modal-stage-iframe {
+        height: 288px;
+      }
 
   .header-actions {
     width: auto;
@@ -817,8 +990,8 @@ footer {
   }
 
   .modal-content {
-    padding: 1rem;
-  }
+      padding: 0.8rem;
+    }
 
   .resume-shell {
     padding: 1.5rem 0.75rem;

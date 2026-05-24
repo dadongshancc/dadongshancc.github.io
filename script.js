@@ -1,12 +1,15 @@
 const projects = [
   {
-    title: "\u0041\u0049\u0047\u0043 \u5185\u5bb9\u751f\u6210\u4e0e\u5de5\u4f5c\u6d41\u5b9e\u9a8c",
+    title: "AIGC 角色化叙事视频生成工作流",
+    cardVariant: "spotlight",
     mediaSrc: "images/project-placeholder.svg",
-    mediaType: "image",
-    shortDescription: "\u56f4\u7ed5\u8bed\u97f3\u751f\u6210\u3001\u6587\u6848\u751f\u6210\u3001\u56fe\u50cf\u751f\u6210\u548c\u81ea\u52a8\u5316\u5185\u5bb9\u751f\u4ea7\u6d41\u7a0b\u505a\u8fc7\u82e5\u5e72\u5e94\u7528\u5b9e\u9a8c\u3002",
-    fullDescription: "\u8fd9\u4e2a\u65b9\u5411\u7684\u5b9e\u8df5\u4e3b\u8981\u805a\u7126\u5728 AIGC \u7684\u5b9e\u9645\u843d\u5730\u3002\n\n\u5305\u62ec\u8bed\u97f3\u751f\u6210\u3001\u6587\u6848\u751f\u6210\u3001\u56fe\u50cf\u751f\u6210\u4ee5\u53ca\u81ea\u52a8\u5316\u5185\u5bb9\u751f\u4ea7\u6d41\u7a0b\u7684\u4e32\u8054\u548c\u8c03\u8bd5\uff0c\u4fa7\u91cd\u770b\u4e0d\u540c\u6a21\u578b\u80fd\u529b\u5728\u771f\u5b9e\u573a\u666f\u4e2d\u7684\u7ec4\u5408\u65b9\u5f0f\u3001\u53ef\u7528\u6027\u4e0e\u8f93\u51fa\u8d28\u91cf\u3002",
-    githubUrl: "",
-    huggingfaceUrl: "",
+    mediaType: "interactive",
+    interactiveSrc: "https://dadongshancc.github.io/lord-of-the-mysteries-character-graph/",
+    interactiveSrcLocal: "../projects/lord-of-the-mysteries-character-graph/index.html",
+    shortDescription: "\u672c\u9879\u76ee\u6784\u5efa\u4e86\u4e00\u5957\u9762\u5411\u957f\u6587\u672c\u5185\u5bb9\u7684 AIGC \u53d9\u4e8b\u89c6\u9891\u751f\u4ea7\u6d41\u7a0b\uff0c\u8986\u76d6\u6587\u672c\u62c6\u5206\u3001\u89d2\u8272\u89c6\u89d2\u6587\u6848\u751f\u6210\u3001AI \u8bed\u97f3\u5408\u6210\u3001\u5b57\u5e55\u4e0e\u89c6\u9891\u81ea\u52a8\u5316\u751f\u6210\u7b49\u73af\u8282\u3002\u53d7\u56fe\u7ed3\u6784\u53ef\u8868\u793a\u4eba\u7269\u5173\u7cfb\u7684\u542f\u53d1\uff0c\u5c06\u4eba\u7269\u5173\u7cfb\u56fe\u8c31\u5f15\u5165 workflow \u4f5c\u4e3a\u53d9\u4e8b\u63a7\u5236\u5c42\uff0c\u7528\u4e8e\u8f85\u52a9\u786e\u5b9a\u89d2\u8272\u5b9a\u4f4d\u3001\u53d9\u4e8b\u89c6\u89d2\u3001\u5173\u7cfb\u8bed\u6c14\u548c\u4fe1\u606f\u8fb9\u754c\u3002\u5185\u5bb9\u5408\u96c6\u5df2\u83b7\u5f97\u767e\u4e07\u64ad\u653e\u91cf\uff0c\u9a8c\u8bc1\u4e86 AIGC workflow \u5728\u5185\u5bb9\u751f\u4ea7\u573a\u666f\u4e2d\u7684\u53ef\u884c\u6027\u3002",
+    fullDescription: "\u672c\u9879\u76ee\u6784\u5efa\u4e86\u4e00\u5957\u9762\u5411\u957f\u6587\u672c\u5185\u5bb9\u7684 AIGC \u53d9\u4e8b\u89c6\u9891\u751f\u4ea7\u6d41\u7a0b\uff0c\u8986\u76d6\u6587\u672c\u62c6\u5206\u3001\u89d2\u8272\u89c6\u89d2\u6587\u6848\u751f\u6210\u3001AI \u8bed\u97f3\u5408\u6210\u3001\u5b57\u5e55\u4e0e\u89c6\u9891\u81ea\u52a8\u5316\u751f\u6210\u7b49\u73af\u8282\u3002\n\n\u6d41\u7a0b\u4e2d\u4f7f\u7528 NotebookLM \u5bf9\u957f\u7bc7\u6587\u672c\u8fdb\u884c\u89d2\u8272\u5316\u6574\u7406\u4e0e\u6539\u5199\uff0c\u518d\u901a\u8fc7 GPT-SoVITS v4 \u8bad\u7ec3\u5f97\u5230\u7684\u8bed\u97f3\u6a21\u578b\u751f\u6210\u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b\u914d\u97f3\uff0c\u6700\u540e\u7ed3\u5408\u526a\u6620\u81ea\u52a8\u5b57\u5e55\u4e0e\u89c6\u9891\u6a21\u677f\u5b8c\u6210\u6279\u91cf\u5185\u5bb9\u751f\u4ea7\u3002\n\n\u53d7\u56fe\u7ed3\u6784\u53ef\u4ee5\u8868\u793a\u4eba\u7269\u5173\u7cfb\u7684\u542f\u53d1\uff0c\u5f15\u5165\u4eba\u7269\u5173\u7cfb\u56fe\u8c31\u4f5c\u4e3a\u53d9\u4e8b\u63a7\u5236\u5c42\uff0c\u5c06\u89d2\u8272\u62bd\u8c61\u4e3a\u8282\u70b9\uff0c\u5c06\u5173\u8054\u62bd\u8c61\u4e3a\u8fb9\uff0c\u7528\u4e8e\u8f85\u52a9\u786e\u5b9a\u89d2\u8272\u5b9a\u4f4d\u3001\u53d9\u4e8b\u89c6\u89d2\u3001\u5173\u7cfb\u8bed\u6c14\u548c\u4fe1\u606f\u8fb9\u754c\u3002\u8be5\u6d41\u7a0b\u5df2\u7528\u4e8e\u5236\u4f5c\u6570\u5341\u671f\u7b2c\u4e00\u4eba\u79f0\u4ee3\u5165\u5f0f\u8bf4\u4e66\u89c6\u9891\uff0c\u5185\u5bb9\u5408\u96c6\u83b7\u5f97\u767e\u4e07\u64ad\u653e\u91cf\uff0c\u9a8c\u8bc1\u4e86 AIGC workflow \u5728\u5185\u5bb9\u751f\u4ea7\u573a\u666f\u4e2d\u7684\u53ef\u884c\u6027\u3002",
+    githubUrl: "https://github.com/dadongshancc/lord-of-the-mysteries-character-graph",
+    douyinUrl: "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7526863954049600827&showTab=post",
     websiteUrl: ""
   },
   {
@@ -75,8 +78,7 @@ const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalMediaWrapper = document.getElementById("modalMediaWrapper");
 const modalGithub = document.getElementById("modalGithub");
-const modalHuggingface = document.getElementById("modalHuggingface");
-const modalWebsite = document.getElementById("modalWebsite");
+const modalDouyin = document.getElementById("modalDouyin");
 const closeModalButton = document.getElementById("closeModal");
 const emailToggle = document.getElementById("emailToggle");
 const emailReveal = document.getElementById("emailReveal");
@@ -86,13 +88,41 @@ function buildCardLinks(project) {
   if (project.githubUrl) {
     links.push(`<a href="${project.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub" data-stop-modal="true"><i class="fab fa-github"></i></a>`);
   }
-  if (project.huggingfaceUrl) {
-    links.push(`<a href="${project.huggingfaceUrl}" target="_blank" rel="noreferrer" aria-label="\u6a21\u578b\u94fe\u63a5" data-stop-modal="true"><i class="fas fa-face-smile"></i></a>`);
-  }
   if (project.websiteUrl) {
     links.push(`<a href="${project.websiteUrl}" target="_blank" rel="noreferrer" aria-label="\u7f51\u7ad9\u94fe\u63a5" data-stop-modal="true"><i class="fas fa-globe"></i></a>`);
   }
   return links.length ? `<div class="card-links">${links.join("")}</div>` : "";
+}
+
+function renderDescription(text) {
+  return text
+    .split(/\n{2,}/)
+    .map((paragraph) => `<p>${paragraph.trim()}</p>`)
+    .join("");
+}
+
+function renderSpotlightCard(project, index) {
+  return `
+    <article class="card card-spotlight" data-project-index="${index}" tabindex="0" role="button" aria-label="\u6253\u5f00 ${project.title} \u7684\u8be6\u60c5">
+      <div class="spotlight-cover">
+        <div class="spotlight-cover-top">
+          <div class="spotlight-panel panel-script"><span>Character Graph</span></div>
+          <div class="spotlight-panel panel-core"><span>Static Interactive</span></div>
+          <div class="spotlight-panel panel-flow"><span>Role Network</span></div>
+        </div>
+        <div class="spotlight-cover-bottom">
+          <div class="spotlight-copy">
+            <h3>${project.title}</h3>
+            <p class="spotlight-description">${project.shortDescription}</p>
+          </div>
+          <div class="spotlight-actions">
+            ${project.githubUrl ? `<a class="spotlight-github" href="${project.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub" data-stop-modal="true"><i class="fab fa-github"></i></a>` : ""}
+            ${project.douyinUrl ? `<a class="spotlight-douyin" href="${project.douyinUrl}" target="_blank" rel="noreferrer" aria-label="抖音" data-stop-modal="true"><i class="fab fa-tiktok"></i></a>` : ""}
+          </div>
+        </div>
+      </div>
+    </article>
+  `;
 }
 
 function renderMedia(mediaType, mediaSrc, title) {
@@ -112,16 +142,21 @@ function renderProjects() {
     return;
   }
 
-  projectsGrid.innerHTML = projects.map((project, index) => `
-    <article class="card" data-project-index="${index}" tabindex="0" role="button" aria-label="\u6253\u5f00 ${project.title} \u7684\u8be6\u60c5">
-      ${renderMedia(project.mediaType, project.mediaSrc, project.title)}
-      <h3>${project.title}</h3>
-      <div class="card-content">
-        <p class="card-description">${project.shortDescription}</p>
-        ${buildCardLinks(project)}
-      </div>
-    </article>
-  `).join("");
+  projectsGrid.innerHTML = projects.map((project, index) => {
+    if (project.cardVariant === "spotlight") {
+      return renderSpotlightCard(project, index);
+    }
+    return `
+      <article class="card" data-project-index="${index}" tabindex="0" role="button" aria-label="\u6253\u5f00 ${project.title} \u7684\u8be6\u60c5">
+        ${renderMedia(project.mediaType, project.mediaSrc, project.title)}
+        <h3>${project.title}</h3>
+        <div class="card-content">
+          <p class="card-description">${project.shortDescription}</p>
+          ${buildCardLinks(project)}
+        </div>
+      </article>
+    `;
+  }).join("");
 
   projectsGrid.querySelectorAll(".card").forEach((card) => {
     card.addEventListener("click", (event) => {
@@ -173,11 +208,42 @@ function setLinkState(element, url) {
   }
   if (url) {
     element.href = url;
+    element.removeAttribute("aria-disabled");
+    element.classList.remove("is-disabled");
     element.style.display = "inline-flex";
   } else {
     element.removeAttribute("href");
-    element.style.display = "none";
+    element.setAttribute("aria-disabled", "true");
+    element.classList.add("is-disabled");
+    element.style.display = "inline-flex";
   }
+}
+
+function resolveInteractiveSrc(project) {
+  if (window.location.protocol === "file:" && project.interactiveSrcLocal) {
+    return project.interactiveSrcLocal;
+  }
+  return project.interactiveSrc;
+}
+
+function renderModalStage(project) {
+  if (project.interactiveSrc) {
+    return `
+      <div class="modal-stage-shell">
+        <iframe class="modal-stage-iframe" src="${resolveInteractiveSrc(project)}" title="${project.title}" loading="lazy"></iframe>
+      </div>
+    `;
+  }
+
+  if (project.mediaType === "video") {
+    return `
+      <video class="modal-video" autoplay loop muted playsinline controls>
+        <source src="${project.mediaSrc}" type="video/mp4">
+      </video>
+    `;
+  }
+
+  return `<img class="modal-image" src="${project.mediaSrc}" alt="${project.title}">`;
 }
 
 function openProjectModal(projectIndex) {
@@ -187,21 +253,11 @@ function openProjectModal(projectIndex) {
   }
 
   modalTitle.textContent = project.title;
-  modalDescription.textContent = project.fullDescription;
-
-  if (project.mediaType === "video") {
-    modalMediaWrapper.innerHTML = `
-      <video class="modal-video" autoplay loop muted playsinline controls>
-        <source src="${project.mediaSrc}" type="video/mp4">
-      </video>
-    `;
-  } else {
-    modalMediaWrapper.innerHTML = `<img class="modal-image" src="${project.mediaSrc}" alt="${project.title}">`;
-  }
+  modalDescription.innerHTML = renderDescription(project.fullDescription);
+  modalMediaWrapper.innerHTML = renderModalStage(project);
 
   setLinkState(modalGithub, project.githubUrl);
-  setLinkState(modalHuggingface, project.huggingfaceUrl);
-  setLinkState(modalWebsite, project.websiteUrl);
+  setLinkState(modalDouyin, project.douyinUrl);
 
   projectModal.classList.add("is-open");
   projectModal.setAttribute("aria-hidden", "false");
