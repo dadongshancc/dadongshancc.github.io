@@ -885,8 +885,18 @@ footer {
   }
 
   .modal-stage-iframe {
-        height: 288px;
+        height: 300px;
       }
+
+  .modal-content h2 {
+    font-size: 1.18rem;
+    line-height: 1.35;
+  }
+
+  .modal-description {
+    font-size: 0.82rem;
+    line-height: 1.55;
+  }
 
   .header-actions {
     width: auto;
