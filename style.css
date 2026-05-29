@@ -647,15 +647,11 @@ footer {
   box-shadow: var(--shadow);
 }
 
-.resume-preview-link {
-  display: block;
-  background: #ffffff;
-}
-
-.resume-preview-image {
+.resume-pdf-frame {
   width: 100%;
-  height: auto;
+  height: min(82vh, 1120px);
   display: block;
+  border: 0;
   background: #ffffff;
 }
 
