@@ -1,75 +1,80 @@
 const projects = [
   {
-    title: "AIGC 角色化叙事视频生成工作流",
-    cardVariant: "spotlight",
-    mediaSrc: "images/project-placeholder.svg",
-    mediaType: "interactive",
-    interactiveSrc: "https://dadongshancc.github.io/lord-of-the-mysteries-character-graph/",
-    interactiveSrcLocal: "../projects/lord-of-the-mysteries-character-graph/index.html",
-    shortDescription: "\u672c\u9879\u76ee\u6784\u5efa\u4e86\u4e00\u5957\u9762\u5411\u957f\u6587\u672c\u5185\u5bb9\u7684 AIGC \u53d9\u4e8b\u89c6\u9891\u751f\u4ea7\u6d41\u7a0b\uff0c\u8986\u76d6\u6587\u672c\u62c6\u5206\u3001\u89d2\u8272\u89c6\u89d2\u6587\u6848\u751f\u6210\u3001AI \u8bed\u97f3\u5408\u6210\u3001\u5b57\u5e55\u4e0e\u89c6\u9891\u81ea\u52a8\u5316\u751f\u6210\u7b49\u73af\u8282\u3002\u53d7\u56fe\u7ed3\u6784\u53ef\u8868\u793a\u4eba\u7269\u5173\u7cfb\u7684\u542f\u53d1\uff0c\u5c06\u4eba\u7269\u5173\u7cfb\u56fe\u8c31\u5f15\u5165 workflow \u4f5c\u4e3a\u53d9\u4e8b\u63a7\u5236\u5c42\uff0c\u7528\u4e8e\u8f85\u52a9\u786e\u5b9a\u89d2\u8272\u5b9a\u4f4d\u3001\u53d9\u4e8b\u89c6\u89d2\u3001\u5173\u7cfb\u8bed\u6c14\u548c\u4fe1\u606f\u8fb9\u754c\u3002\u5185\u5bb9\u5408\u96c6\u5df2\u83b7\u5f97\u767e\u4e07\u64ad\u653e\u91cf\uff0c\u9a8c\u8bc1\u4e86 AIGC workflow \u5728\u5185\u5bb9\u751f\u4ea7\u573a\u666f\u4e2d\u7684\u53ef\u884c\u6027\u3002",
-    fullDescription: "\u672c\u9879\u76ee\u6784\u5efa\u4e86\u4e00\u5957\u9762\u5411\u957f\u6587\u672c\u5185\u5bb9\u7684 AIGC \u53d9\u4e8b\u89c6\u9891\u751f\u4ea7\u6d41\u7a0b\uff0c\u8986\u76d6\u6587\u672c\u62c6\u5206\u3001\u89d2\u8272\u89c6\u89d2\u6587\u6848\u751f\u6210\u3001AI \u8bed\u97f3\u5408\u6210\u3001\u5b57\u5e55\u4e0e\u89c6\u9891\u81ea\u52a8\u5316\u751f\u6210\u7b49\u73af\u8282\u3002\n\n\u6d41\u7a0b\u4e2d\u4f7f\u7528 NotebookLM \u5bf9\u957f\u7bc7\u6587\u672c\u8fdb\u884c\u89d2\u8272\u5316\u6574\u7406\u4e0e\u6539\u5199\uff0c\u518d\u901a\u8fc7 GPT-SoVITS v4 \u8bad\u7ec3\u5f97\u5230\u7684\u8bed\u97f3\u6a21\u578b\u751f\u6210\u7b2c\u4e00\u4eba\u79f0\u53d9\u4e8b\u914d\u97f3\uff0c\u6700\u540e\u7ed3\u5408\u526a\u6620\u81ea\u52a8\u5b57\u5e55\u4e0e\u89c6\u9891\u6a21\u677f\u5b8c\u6210\u6279\u91cf\u5185\u5bb9\u751f\u4ea7\u3002\n\n\u53d7\u56fe\u7ed3\u6784\u53ef\u4ee5\u8868\u793a\u4eba\u7269\u5173\u7cfb\u7684\u542f\u53d1\uff0c\u5f15\u5165\u4eba\u7269\u5173\u7cfb\u56fe\u8c31\u4f5c\u4e3a\u53d9\u4e8b\u63a7\u5236\u5c42\uff0c\u5c06\u89d2\u8272\u62bd\u8c61\u4e3a\u8282\u70b9\uff0c\u5c06\u5173\u8054\u62bd\u8c61\u4e3a\u8fb9\uff0c\u7528\u4e8e\u8f85\u52a9\u786e\u5b9a\u89d2\u8272\u5b9a\u4f4d\u3001\u53d9\u4e8b\u89c6\u89d2\u3001\u5173\u7cfb\u8bed\u6c14\u548c\u4fe1\u606f\u8fb9\u754c\u3002\u8be5\u6d41\u7a0b\u5df2\u7528\u4e8e\u5236\u4f5c\u6570\u5341\u671f\u7b2c\u4e00\u4eba\u79f0\u4ee3\u5165\u5f0f\u8bf4\u4e66\u89c6\u9891\uff0c\u5185\u5bb9\u5408\u96c6\u83b7\u5f97\u767e\u4e07\u64ad\u653e\u91cf\uff0c\u9a8c\u8bc1\u4e86 AIGC workflow \u5728\u5185\u5bb9\u751f\u4ea7\u573a\u666f\u4e2d\u7684\u53ef\u884c\u6027\u3002",
+    title: "短视频平台内容自动化生产",
+    subtitle: "多媒体 AIGC 工作流",
+    period: "2025.05 - 2025.09",
+    theme: "aigc",
+    labels: ["NotebookLM", "GPT-SoVITS", "AIGC 工作流"],
+    shortDescription: "围绕长篇文本拆分、角色第一人称叙事、AI 语音合成和视频自动化制作，构建面向短视频平台的 AIGC 内容生产流程。",
+    fullDescription: [
+      "基于 NotebookLM 将长篇文本拆分并重写为角色第一人称叙事文案，形成适配短视频平台节奏的系列化内容脚本。",
+      "使用 GPT-SoVITS v4 训练角色语音模型，将生成文案转化为特定角色音色配音，并结合自动化字幕与剪辑流程完成视频定期制作。",
+      "通过 AIGC 工作流完成并发布角色说书作品数十期，半年内热门作品播放量超 25 万，抖音累计播放量超 150 万。"
+    ],
+    demoUrl: "https://dadongshancc.github.io/lord-of-the-mysteries-character-graph/",
     githubUrl: "https://github.com/dadongshancc/lord-of-the-mysteries-character-graph",
-    douyinUrl: "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7526863954049600827&showTab=post",
-    websiteUrl: ""
+    douyinUrl: "https://www.douyin.com/user/self?from_tab_name=main&modal_id=7526863954049600827&showTab=post"
   },
   {
-    title: "\u7a7a\u95f4\u4e0e\u5e03\u5c40\u751f\u6210\u63a2\u7d22",
-    mediaSrc: "images/project-placeholder-alt.svg",
-    mediaType: "image",
-    shortDescription: "\u4ece GAN \u5230 GNN / Transformer \u505a\u8fc7\u5e03\u5c40\u751f\u6210\u65b9\u5411\u7684\u7814\u7a76\u63a2\u7d22\uff0c\u5173\u6ce8\u56fe\u5173\u7cfb\u3001\u751f\u6210\u63a7\u5236\u548c\u7ed3\u679c\u8bc4\u4f30\u3002",
-    fullDescription: "\u8fd9\u90e8\u5206\u5de5\u4f5c\u4e3b\u8981\u56f4\u7ed5\u7a7a\u95f4\u4e0e\u5e03\u5c40\u751f\u6210\u5c55\u5f00\u3002\n\n\u63a8\u8fdb\u8fc7\u4ece GAN \u5230 GNN / Transformer \u7684\u65b9\u6cd5\u5bf9\u6bd4\u4e0e\u8bbe\u60f3\uff0c\u91cd\u70b9\u662f\u5e03\u5c40\u7ed3\u6784\u5efa\u6a21\u3001\u56fe\u5173\u7cfb\u8868\u8fbe\u3001\u53ef\u63a7\u751f\u6210\u4ee5\u53ca\u751f\u6210\u7ed3\u679c\u7684\u8bc4\u4f30\u65b9\u5f0f\u3002",
-    githubUrl: "",
-    huggingfaceUrl: "",
-    websiteUrl: ""
+    title: "GridForge 空间推理数据集",
+    subtitle: "规则智能体系统",
+    period: "2023.09 - 2025.01",
+    theme: "grid",
+    labels: ["空间推理", "Python", "规则智能体"],
+    shortDescription: "基于网格假设构建空间推理数据集，通过规则智能体生成结构化布局样本、标签数据与可视化结果。",
+    fullDescription: [
+      "作为项目负责人统筹项目策划、算法开发与数据管理，持续推进 13 个月，并获得 1.5 万元竞赛资金支持。",
+      "基于网格假设构建面向空间推理的数据集，支持批量生成结构化布局样本、标签数据与可视化结果。",
+      "基于 Python 分层设计 4 类规则智能体，在网格空间中提升数据样本复杂度与多样性。"
+    ],
+    demoUrl: "https://dadongshancc.github.io/GridForge/",
+    githubUrl: "https://github.com/dadongshancc/GridForge"
   },
   {
-    title: "\u6570\u636e\u96c6\u6784\u5efa\u4e0e\u5b9e\u9a8c\u5de5\u5177\u5f00\u53d1",
-    mediaSrc: "images/project-placeholder-grid.svg",
-    mediaType: "image",
-    shortDescription: "\u505a\u8fc7\u89c4\u5219\u751f\u6210\u5de5\u5177\u3001\u6807\u6ce8\u5de5\u5177\u548c\u524d\u7aef demo\uff0c\u7528\u4e8e\u8f85\u52a9\u6837\u672c\u751f\u6210\u3001\u6570\u636e\u6574\u7406\u548c\u6a21\u578b\u8bad\u7ec3\u3002",
-    fullDescription: "\u8fd9\u7c7b\u9879\u76ee\u66f4\u504f\u5411\u5de5\u5177\u548c\u6d41\u7a0b\u5c42\u3002\n\n\u901a\u8fc7\u89c4\u5219\u751f\u6210\u3001\u6807\u6ce8\u8f85\u52a9\u3001\u524d\u7aef\u5c0f\u5de5\u5177\u548c demo \u7684\u65b9\u5f0f\uff0c\u63d0\u9ad8\u6570\u636e\u6784\u5efa\u548c\u5b9e\u9a8c\u7ec4\u7ec7\u7684\u6548\u7387\uff0c\u8ba9\u6a21\u578b\u8bad\u7ec3\u4e0e\u8bc4\u4f30\u6d41\u7a0b\u66f4\u53ef\u7ba1\u7406\u3002",
-    githubUrl: "",
-    huggingfaceUrl: "",
-    websiteUrl: ""
-  },
-  {
-    title: "GroundingDINO + SAM \u56fe\u50cf\u8bed\u4e49\u8bc6\u522b\u4e0e\u5206\u5272\u5b9e\u9a8c",
-    mediaSrc: "images/project-placeholder.svg",
-    mediaType: "image",
-    shortDescription: "\u5728\u56fd\u5bb6\u91cd\u70b9\u7814\u53d1\u8ba1\u5212\u76f8\u5173\u8bfe\u9898\u4e2d\uff0c\u4f7f\u7528 GroundingDINO + SAM \u5b8c\u6210\u56fe\u50cf\u8bed\u4e49\u8bc6\u522b\u4e0e\u5206\u5272\u76f8\u5173\u5b9e\u9a8c\u3002",
-    fullDescription: "\u8fd9\u90e8\u5206\u5de5\u4f5c\u66f4\u63a5\u8fd1\u89c6\u89c9\u6a21\u578b\u5728\u7279\u5b9a\u4efb\u52a1\u4e0b\u7684\u7ec4\u5408\u5e94\u7528\u3002\n\n\u4ee5 GroundingDINO \u4e0e SAM \u7684\u80fd\u529b\u4e32\u8054\u4e3a\u57fa\u7840\uff0c\u8fdb\u884c\u8bed\u4e49\u8bc6\u522b\u4e0e\u5206\u5272\u5b9e\u9a8c\uff0c\u79ef\u7d2f\u4e86\u4e00\u5b9a\u7684\u6a21\u578b\u7ec4\u5408\u4f7f\u7528\u4e0e\u7ed3\u679c\u89c2\u5bdf\u7ecf\u9a8c\u3002",
-    githubUrl: "",
-    huggingfaceUrl: "",
-    websiteUrl: ""
+    title: "MarketGraph AI 股票复盘助手",
+    subtitle: "金融事件知识图谱",
+    period: "2025.03 - 至今",
+    theme: "market",
+    labels: ["LLM", "知识图谱", "复盘助手"],
+    shortDescription: "面向个人投资复盘场景，记录市场走势、主观判断与事件链接，构建个人化金融事件知识图谱。",
+    fullDescription: [
+      "面向个人投资复盘场景，轻量化记录市场走势、主观判断与关联逻辑，追踪个性化投资策略。",
+      "设计“事件-判断-链接”时间轴交互，以正向、负向与不确定标签记录个人判断，链接事件表达市场行为的长期关联。",
+      "接入 LLM 完成财经事件抽取、态度识别与关系链路整理，构建由个人判断与金融事件组成的用户知识图谱。"
+    ],
+    githubUrl: "https://github.com/dadongshancc"
   }
 ];
 
-const publications = [
+const researchArticles = [
   {
-    imageSrc: "images/publication-placeholder.svg",
-    authors: "\u7814\u7a76\u65b9\u5411 01",
-    title: "AIGC \u5185\u5bb9\u751f\u6210\u4e0e\u53ef\u63a7\u56fe\u50cf\u751f\u6210",
-    venue: "\u805a\u7126\u591a\u6a21\u6001\u5185\u5bb9\u751f\u6210\u3001\u63d0\u793a\u8bbe\u8ba1\u3001\u751f\u6210\u7ed3\u679c\u63a7\u5236\u548c\u5e94\u7528\u5316\u5b9e\u9a8c\u3002",
-    link: ""
+    title: "建筑立面语义识别与分割",
+    role: "西安建筑科技大学 | 研究助理",
+    period: "2023.06 - 2024.06",
+    theme: "facade",
+    tags: ["GroundingDINO", "SAM", "ControlNet"],
+    body: [
+      "这段研究主要面向建筑立面图像的语义识别、目标检测与区域分割。工作重点不是单一模型训练，而是搭建可复用的数据生成流程，将真实建筑立面图像转化为颜色-类别一致的语义掩码样本。",
+      "流程中集成 GroundingDINO 与 Segment Anything Model（SAM），利用文本提示补足 SAM 缺乏语义类别识别的问题，实现文本提示驱动的目标检测与分割。",
+      "后续将数据接入 ComfyUI 工作流，作为 ControlNet 条件输入 Stable Diffusion，支持结构约束下的可控生成实验。"
+    ]
   },
   {
-    imageSrc: "images/publication-placeholder-alt.svg",
-    authors: "\u7814\u7a76\u65b9\u5411 02",
-    title: "\u7a7a\u95f4\u4e0e\u5e03\u5c40\u751f\u6210\u5efa\u6a21",
-    venue: "\u805a\u7126\u5e03\u5c40\u7ed3\u6784\u3001\u56fe\u5173\u7cfb\u5efa\u6a21\u3001GAN \u5230 GNN / Transformer \u7684\u751f\u6210\u65b9\u6cd5\u63a2\u7d22\u3002",
-    link: ""
-  },
-  {
-    imageSrc: "images/publication-placeholder.svg",
-    authors: "\u7814\u7a76\u65b9\u5411 03",
-    title: "\u6570\u636e\u6784\u5efa\u3001\u8bc4\u4f30\u4e0e\u89c6\u89c9\u6a21\u578b\u5e94\u7528",
-    venue: "\u5305\u62ec\u6570\u636e\u96c6\u6784\u5efa\u3001\u6807\u6ce8\u8f85\u52a9\u3001\u5de5\u5177\u5f00\u53d1\uff0c\u4ee5\u53ca GroundingDINO + SAM \u76f8\u5173\u89c6\u89c9\u5b9e\u9a8c\u3002",
-    link: ""
+    title: "可编辑住宅平面生成",
+    role: "华南理工大学 | 研究助理",
+    period: "2025.12 - 2026.03",
+    theme: "plan",
+    tags: ["GraphMAE2", "GPT-1", "SVG"],
+    body: [
+      "这段研究关注住宅平面图的可编辑生成。核心思路是把房间类型、房间数量与连接关系建模为图，并用掩码图自编码器 GraphMAE2 进行图自监督学习。",
+      "在生成阶段，基于 GPT-1 框架将平面布局建模为序列，在 80k+ 数据集上训练与评估自回归模型，输出可编辑的 SVG 矢量图。",
+      "实验在 RPLAN 基准数据集上达到 SOTA 性能；相较 HouseGAN++，生成质量提升 42%；相较 HouseDiffusion，推理速度提升 215%。"
+    ]
   }
 ];
 
 const projectsGrid = document.getElementById("projects-grid");
-const publicationsList = document.getElementById("publications-list");
+const researchList = document.getElementById("research-list");
 const hamburger = document.getElementById("hamburger");
 const navLinks = document.getElementById("nav-links");
 const stickyNav = document.querySelector(".sticky-nav");
@@ -77,47 +82,56 @@ const projectModal = document.getElementById("projectModal");
 const modalTitle = document.getElementById("modalTitle");
 const modalDescription = document.getElementById("modalDescription");
 const modalMediaWrapper = document.getElementById("modalMediaWrapper");
+const modalExternal = document.getElementById("modalExternal");
 const modalGithub = document.getElementById("modalGithub");
 const modalDouyin = document.getElementById("modalDouyin");
 const closeModalButton = document.getElementById("closeModal");
+const articleModal = document.getElementById("articleModal");
+const articleTitle = document.getElementById("articleTitle");
+const articleMeta = document.getElementById("articleMeta");
+const articleBody = document.getElementById("articleBody");
+const closeArticleModalButton = document.getElementById("closeArticleModal");
 const emailToggle = document.getElementById("emailToggle");
 const emailReveal = document.getElementById("emailReveal");
+
+function renderParagraphs(paragraphs) {
+  return paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join("");
+}
 
 function buildCardLinks(project) {
   const links = [];
   if (project.githubUrl) {
     links.push(`<a href="${project.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub" data-stop-modal="true"><i class="fab fa-github"></i></a>`);
   }
-  if (project.websiteUrl) {
-    links.push(`<a href="${project.websiteUrl}" target="_blank" rel="noreferrer" aria-label="\u7f51\u7ad9\u94fe\u63a5" data-stop-modal="true"><i class="fas fa-globe"></i></a>`);
+  if (project.douyinUrl) {
+    links.push(`<a href="${project.douyinUrl}" target="_blank" rel="noreferrer" aria-label="抖音" data-stop-modal="true"><i class="fab fa-tiktok"></i></a>`);
   }
-  return links.length ? `<div class="card-links">${links.join("")}</div>` : "";
+  return links.length ? `<div class="card-links spotlight-card-links">${links.join("")}</div>` : "";
 }
 
-function renderDescription(text) {
-  return text
-    .split(/\n{2,}/)
-    .map((paragraph) => `<p>${paragraph.trim()}</p>`)
-    .join("");
-}
+function renderProjectCard(project, index) {
+  const panelLabels = [
+    project.labels[0] || project.subtitle,
+    project.labels[1] || project.title,
+    project.labels[2] || project.period
+  ];
 
-function renderSpotlightCard(project, index) {
   return `
-    <article class="card card-spotlight" data-project-index="${index}" tabindex="0" role="button" aria-label="\u6253\u5f00 ${project.title} \u7684\u8be6\u60c5">
+    <article class="card card-spotlight project-theme-${project.theme}" data-project-index="${index}" tabindex="0" role="button" aria-label="打开 ${project.title} 的详情">
       <div class="spotlight-cover">
         <div class="spotlight-cover-top">
-          <div class="spotlight-panel panel-script"><span>Character Graph</span></div>
-          <div class="spotlight-panel panel-core"><span>Static Interactive</span></div>
-          <div class="spotlight-panel panel-flow"><span>Role Network</span></div>
+          <div class="spotlight-panel panel-script"><span>${panelLabels[0]}</span></div>
+          <div class="spotlight-panel panel-core"><span>${panelLabels[1]}</span></div>
+          <div class="spotlight-panel panel-flow"><span>${panelLabels[2]}</span></div>
         </div>
         <div class="spotlight-cover-bottom">
           <div class="spotlight-copy">
+            <p class="spotlight-meta">${project.period} · ${project.subtitle}</p>
             <h3>${project.title}</h3>
             <p class="spotlight-description">${project.shortDescription}</p>
           </div>
           <div class="spotlight-actions">
-            ${project.githubUrl ? `<a class="spotlight-github" href="${project.githubUrl}" target="_blank" rel="noreferrer" aria-label="GitHub" data-stop-modal="true"><i class="fab fa-github"></i></a>` : ""}
-            ${project.douyinUrl ? `<a class="spotlight-douyin" href="${project.douyinUrl}" target="_blank" rel="noreferrer" aria-label="抖音" data-stop-modal="true"><i class="fab fa-tiktok"></i></a>` : ""}
+            ${buildCardLinks(project)}
           </div>
         </div>
       </div>
@@ -125,43 +139,16 @@ function renderSpotlightCard(project, index) {
   `;
 }
 
-function renderMedia(mediaType, mediaSrc, title) {
-  if (mediaType === "video") {
-    return `
-      <video class="card-media" autoplay loop muted playsinline>
-        <source src="${mediaSrc}" type="video/mp4">
-        \u4f60\u7684\u6d4f\u89c8\u5668\u6682\u4e0d\u652f\u6301\u89c6\u9891\u64ad\u653e\u3002
-      </video>
-    `;
-  }
-  return `<img class="card-image" src="${mediaSrc}" alt="${title}">`;
-}
-
 function renderProjects() {
   if (!projectsGrid) {
     return;
   }
 
-  projectsGrid.innerHTML = projects.map((project, index) => {
-    if (project.cardVariant === "spotlight") {
-      return renderSpotlightCard(project, index);
-    }
-    return `
-      <article class="card" data-project-index="${index}" tabindex="0" role="button" aria-label="\u6253\u5f00 ${project.title} \u7684\u8be6\u60c5">
-        ${renderMedia(project.mediaType, project.mediaSrc, project.title)}
-        <h3>${project.title}</h3>
-        <div class="card-content">
-          <p class="card-description">${project.shortDescription}</p>
-          ${buildCardLinks(project)}
-        </div>
-      </article>
-    `;
-  }).join("");
+  projectsGrid.innerHTML = projects.map(renderProjectCard).join("");
 
-  projectsGrid.querySelectorAll(".card").forEach((card) => {
+  projectsGrid.querySelectorAll(".card-spotlight").forEach((card) => {
     card.addEventListener("click", (event) => {
-      const link = event.target.closest("[data-stop-modal='true']");
-      if (link) {
+      if (event.target.closest("[data-stop-modal='true']")) {
         event.stopPropagation();
         return;
       }
@@ -177,76 +164,88 @@ function renderProjects() {
   });
 }
 
-function renderPublications() {
-  if (!publicationsList) {
+function renderResearchArticles() {
+  if (!researchList) {
     return;
   }
 
-  publicationsList.innerHTML = publications.map((item) => {
-    const titleContent = item.link
-      ? `<a href="${item.link}" target="_blank" rel="noreferrer">${item.title}</a>`
-      : item.title;
-
+  researchList.innerHTML = researchArticles.map((article, index) => {
+    const tags = article.tags.map((tag) => `<span>${tag}</span>`).join("");
     return `
-      <article class="publication">
-        <div class="pub-image">
-          <img src="${item.imageSrc}" alt="\u7814\u7a76\u914d\u56fe">
+      <article class="research-card research-theme-${article.theme}" data-research-index="${index}" tabindex="0" role="button" aria-label="阅读 ${article.title}">
+        <div class="research-index">${String(index + 1).padStart(2, "0")}</div>
+        <div class="research-visual" aria-hidden="true">
+          <div class="research-visual-frame">
+            <div class="research-visual-grid"></div>
+            <div class="research-visual-mask mask-a"></div>
+            <div class="research-visual-mask mask-b"></div>
+          </div>
         </div>
-        <div class="pub-content">
-          <p class="pub-author">${item.authors}</p>
-          <p class="pub-title">${titleContent}</p>
-          <p class="pub-venue">${item.venue}</p>
+        <div class="research-content">
+          <p class="research-meta">${article.role} · ${article.period}</p>
+          <h3>${article.title}</h3>
+          <div class="research-tags">${tags}</div>
         </div>
+        <span class="research-read-more">阅读全文</span>
       </article>
     `;
   }).join("");
+
+  researchList.querySelectorAll(".research-card").forEach((card) => {
+    card.addEventListener("click", () => openResearchArticle(Number(card.dataset.researchIndex)));
+    card.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        openResearchArticle(Number(card.dataset.researchIndex));
+      }
+    });
+  });
 }
 
-function setLinkState(element, url) {
+function setProjectLink(element, url, label, iconClass) {
   if (!element) {
     return;
   }
-  if (url) {
-    element.href = url;
-    element.removeAttribute("aria-disabled");
-    element.classList.remove("is-disabled");
-    element.style.display = "inline-flex";
-  } else {
-    element.removeAttribute("href");
-    element.setAttribute("aria-disabled", "true");
-    element.classList.add("is-disabled");
-    element.style.display = "inline-flex";
+  if (!url) {
+    element.style.display = "none";
+    return;
   }
+  element.href = url;
+  element.innerHTML = `<i class="${iconClass}"></i>${label ? ` ${label}` : ""}`;
+  element.style.display = "inline-flex";
 }
 
-function resolveInteractiveSrc(project) {
-  const src = window.location.protocol === "file:" && project.interactiveSrcLocal
-    ? project.interactiveSrcLocal
-    : project.interactiveSrc;
-  if (!src) {
-    return "";
-  }
-  return `${src}${src.includes("?") ? "&" : "?"}embed=1`;
+function resolveDemoEmbedSrc(project) {
+  return project.demoUrl || "";
 }
 
-function renderModalStage(project) {
-  if (project.interactiveSrc) {
+function renderProjectStage(project) {
+  if (project.demoUrl) {
     return `
-      <div class="modal-stage-shell">
-        <iframe class="modal-stage-iframe" src="${resolveInteractiveSrc(project)}" title="${project.title}" loading="lazy"></iframe>
+      <div class="modal-live-stage">
+        <iframe class="modal-stage-iframe" src="${resolveDemoEmbedSrc(project)}" title="${project.title}" loading="lazy"></iframe>
       </div>
     `;
   }
 
-  if (project.mediaType === "video") {
-    return `
-      <video class="modal-video" autoplay loop muted playsinline controls>
-        <source src="${project.mediaSrc}" type="video/mp4">
-      </video>
-    `;
-  }
-
-  return `<img class="modal-image" src="${project.mediaSrc}" alt="${project.title}">`;
+  const labels = project.labels.map((label) => `<span>${label}</span>`).join("");
+  return `
+    <div class="modal-live-stage modal-placeholder-stage project-theme-${project.theme}">
+      <div class="modal-placeholder-main">
+        <div class="modal-placeholder-grid"></div>
+        <div class="visual-node node-a"></div>
+        <div class="visual-node node-b"></div>
+        <div class="visual-node node-c"></div>
+        <div class="visual-line line-a"></div>
+        <div class="visual-line line-b"></div>
+      </div>
+      <div class="modal-placeholder-side">
+        <p>${project.period}</p>
+        <h3>${project.subtitle}</h3>
+        <div class="visual-chip-row">${labels}</div>
+      </div>
+    </div>
+  `;
 }
 
 function openProjectModal(projectIndex) {
@@ -256,11 +255,11 @@ function openProjectModal(projectIndex) {
   }
 
   modalTitle.textContent = project.title;
-  modalDescription.innerHTML = renderDescription(project.fullDescription);
-  modalMediaWrapper.innerHTML = renderModalStage(project);
-
-  setLinkState(modalGithub, project.githubUrl);
-  setLinkState(modalDouyin, project.douyinUrl);
+  modalDescription.innerHTML = renderParagraphs(project.fullDescription);
+  modalMediaWrapper.innerHTML = renderProjectStage(project);
+  setProjectLink(modalExternal, project.demoUrl, "", "fa-solid fa-arrow-up-right-from-square");
+  setProjectLink(modalGithub, project.githubUrl, "查看 GitHub", "fab fa-github");
+  setProjectLink(modalDouyin, project.douyinUrl, "查看抖音", "fab fa-tiktok");
 
   projectModal.classList.add("is-open");
   projectModal.setAttribute("aria-hidden", "false");
@@ -273,6 +272,30 @@ function closeProjectModal() {
   }
   projectModal.classList.remove("is-open");
   projectModal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function openResearchArticle(articleIndex) {
+  const article = researchArticles[articleIndex];
+  if (!article || !articleModal) {
+    return;
+  }
+
+  articleMeta.textContent = `${article.role} · ${article.period}`;
+  articleTitle.textContent = article.title;
+  articleBody.innerHTML = renderParagraphs(article.body);
+
+  articleModal.classList.add("is-open");
+  articleModal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function closeResearchArticle() {
+  if (!articleModal) {
+    return;
+  }
+  articleModal.classList.remove("is-open");
+  articleModal.setAttribute("aria-hidden", "true");
   document.body.style.overflow = "";
 }
 
@@ -330,10 +353,18 @@ window.addEventListener("click", (event) => {
   if (event.target === projectModal) {
     closeProjectModal();
   }
+
+  if (event.target === articleModal) {
+    closeResearchArticle();
+  }
 });
 
 if (closeModalButton) {
   closeModalButton.addEventListener("click", closeProjectModal);
+}
+
+if (closeArticleModalButton) {
+  closeArticleModalButton.addEventListener("click", closeResearchArticle);
 }
 
 if (emailToggle && emailReveal) {
@@ -348,11 +379,12 @@ if (emailToggle && emailReveal) {
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
     closeProjectModal();
+    closeResearchArticle();
   }
 });
 
 window.addEventListener("scroll", syncNavState);
 
 renderProjects();
-renderPublications();
+renderResearchArticles();
 syncNavState();
