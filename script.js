@@ -5,11 +5,9 @@ const projects = [
     period: "2025.05 - 2025.09",
     theme: "aigc",
     labels: ["NotebookLM", "GPT-SoVITS", "AIGC 工作流"],
-    shortDescription: "围绕长篇文本拆分、角色第一人称叙事、AI 语音合成和视频自动化制作，构建面向短视频平台的 AIGC 内容生产流程。",
+    shortDescription: "面向短视频内容运营场景的 AIGC 内容生产项目。项目围绕长篇文本向短视频内容转化的需求，搭建从赛道选题、文本拆解、角色叙事改写、AI 配音、字幕生成到剪辑发布的自动化生产流程，提升系列化内容的制作效率与平台传播稳定性。",
     fullDescription: [
-      "基于 NotebookLM 将长篇文本拆分并重写为角色第一人称叙事文案，形成适配短视频平台节奏的系列化内容脚本。",
-      "使用 GPT-SoVITS v4 训练角色语音模型，将生成文案转化为特定角色音色配音，并结合自动化字幕与剪辑流程完成视频定期制作。",
-      "通过 AIGC 工作流完成并发布角色说书作品数十期，半年内热门作品播放量超 25 万，抖音累计播放量超 150 万。"
+      "面向短视频内容运营场景的 AIGC 内容生产项目。项目围绕长篇文本向短视频内容转化的需求，搭建从赛道选题、文本拆解、角色叙事改写、AI 配音、字幕生成到剪辑发布的自动化生产流程，提升系列化内容的制作效率与平台传播稳定性。"
     ],
     demoUrl: "https://dadongshancc.github.io/lord-of-the-mysteries-character-graph/",
     githubUrl: "https://github.com/dadongshancc/lord-of-the-mysteries-character-graph",
@@ -21,28 +19,25 @@ const projects = [
     period: "2023.09 - 2025.01",
     theme: "grid",
     labels: ["空间推理", "Python", "规则智能体"],
-    shortDescription: "基于网格假设构建空间推理数据集，通过规则智能体生成结构化布局样本、标签数据与可视化结果。",
+    shortDescription: "面向空间推理与布局生成任务的合成数据集项目。项目将复杂空间布局抽象为“单元 + 标签”的轻量化表达，通过 9 类空间标签对布局数据进行结构化管理，并基于规则智能体在网格空间中批量生成具有不同复杂度和结构关系的空间布局样本，为后续模型训练与空间数据实验提供数据基础。",
     fullDescription: [
-      "作为项目负责人统筹项目策划、算法开发与数据管理，持续推进 13 个月，并获得 1.5 万元竞赛资金支持。",
-      "基于网格假设构建面向空间推理的数据集，支持批量生成结构化布局样本、标签数据与可视化结果。",
-      "基于 Python 分层设计 4 类规则智能体，在网格空间中提升数据样本复杂度与多样性。"
+      "面向空间推理与布局生成任务的合成数据集项目。项目将复杂空间布局抽象为“单元 + 标签”的轻量化表达，通过 9 类空间标签对布局数据进行结构化管理，并基于规则智能体在网格空间中批量生成具有不同复杂度和结构关系的空间布局样本，为后续模型训练与空间数据实验提供数据基础。"
     ],
     demoUrl: "https://dadongshancc.github.io/GridForge/",
     githubUrl: "https://github.com/dadongshancc/GridForge"
   },
   {
-    title: "MarketGraph AI 股票复盘助手",
-    subtitle: "金融事件知识图谱",
-    period: "2025.03 - 至今",
-    theme: "market",
-    labels: ["LLM", "知识图谱", "复盘助手"],
-    shortDescription: "面向个人投资复盘场景，记录市场走势、主观判断与事件链接，构建个人化金融事件知识图谱。",
+    title: "AI 舞蹈训练评估产品",
+    subtitle: "可交互教学辅助",
+    period: "2026.03 - 至今",
+    theme: "dance",
+    labels: ["Popping", "姿态识别", "训练反馈"],
+    shortDescription: "面向街舞 Popping 基础教学与课后训练场景的 AI 教学辅助产品。项目围绕学员练习、教师批改与机构管理需求，设计从视频上传、动作识别、训练反馈到教师复核与学习报告生成的核心业务流程，探索通过姿态识别与动作数据化提升舞蹈训练反馈效率。",
     fullDescription: [
-      "面向个人投资复盘场景，轻量化记录市场走势、主观判断与关联逻辑，追踪个性化投资策略。",
-      "设计“事件-判断-链接”时间轴交互，以正向、负向与不确定标签记录个人判断，链接事件表达市场行为的长期关联。",
-      "接入 LLM 完成财经事件抽取、态度识别与关系链路整理，构建由个人判断与金融事件组成的用户知识图谱。"
+      "面向街舞 Popping 基础教学与课后训练场景的 AI 教学辅助产品。项目围绕学员练习、教师批改与机构管理需求，设计从视频上传、动作识别、训练反馈到教师复核与学习报告生成的核心业务流程，探索通过姿态识别与动作数据化提升舞蹈训练反馈效率。"
     ],
-    githubUrl: "https://github.com/dadongshancc"
+    imageUrl: "images/aidancecoach-ui.png",
+    githubUrl: "https://chiawei92.github.io/AiDanceCoach/"
   }
 ];
 
@@ -519,6 +514,8 @@ const researchArticles = [
     period: "2023.06 - 2024.06",
     theme: "facade",
     coverImage: "images/r1-1.jpg",
+    paperLabel: "CAADRIA'25",
+    paperUrl: "https://caadria.org/new/wp-content/Downloads/CAADRIA2025_Volume-1.pdf#page=98",
     tags: ["GroundingDINO", "SAM", "ControlNet"],
     blocks: facadeArticleBlocks
   },
@@ -529,6 +526,8 @@ const researchArticles = [
     period: "2025.12 - 2026.03",
     theme: "plan",
     coverImage: "images/r2-1.jpg",
+    paperLabel: "",
+    paperUrl: "",
     tags: ["GraphMAE2", "GPT-1", "SVG"],
     blocks: planArticleBlocks
   }
@@ -720,6 +719,9 @@ function renderResearchArticles() {
 
   researchList.innerHTML = researchArticles.map((article, index) => {
     const tags = article.tags.map((tag) => `<span>${tag}</span>`).join("");
+    const paperLink = article.paperUrl && article.paperLabel
+      ? `<a class="research-paper-link" href="${article.paperUrl}" target="_blank" rel="noreferrer" data-stop-modal="true">${article.paperLabel}</a>`
+      : "";
     const visual = article.coverImage
       ? `<img class="research-cover-image" src="${article.coverImage}" alt="">`
       : `
@@ -734,7 +736,7 @@ function renderResearchArticles() {
         <div class="research-index">${String(index + 1).padStart(2, "0")}</div>
         <div class="research-visual" aria-hidden="true">${visual}</div>
         <div class="research-content">
-          <p class="research-meta">${article.role} · ${article.period}</p>
+          ${paperLink}
           <h3>${article.title}</h3>
           <div class="research-tags">${tags}</div>
         </div>
@@ -744,7 +746,13 @@ function renderResearchArticles() {
   }).join("");
 
   researchList.querySelectorAll(".research-card").forEach((card) => {
-    card.addEventListener("click", () => openResearchArticle(Number(card.dataset.researchIndex)));
+    card.addEventListener("click", (event) => {
+      if (event.target.closest("[data-stop-modal='true']")) {
+        event.stopPropagation();
+        return;
+      }
+      openResearchArticle(Number(card.dataset.researchIndex));
+    });
     card.addEventListener("keydown", (event) => {
       if (event.key === "Enter" || event.key === " ") {
         event.preventDefault();
@@ -772,6 +780,14 @@ function resolveDemoEmbedSrc(project) {
 }
 
 function renderProjectStage(project) {
+  if (project.imageUrl) {
+    return `
+      <div class="modal-live-stage modal-image-stage project-theme-${project.theme}">
+        <img class="modal-stage-image" src="${project.imageUrl}" alt="${project.title} 界面展示">
+      </div>
+    `;
+  }
+
   if (project.demoUrl) {
     return `
       <div class="modal-live-stage">

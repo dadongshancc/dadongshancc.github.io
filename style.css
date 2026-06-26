@@ -380,22 +380,41 @@ header {
   display: grid;
   grid-template-columns: 1fr 1.35fr 1fr;
   background:
-    radial-gradient(circle at top left, rgba(255, 255, 255, 0.24), transparent 40%),
-    linear-gradient(135deg, #09090b 0%, #3b82f6 52%, #8b5cf6 100%);
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.24), transparent 32%),
+    radial-gradient(circle at 72% 68%, rgba(255, 255, 255, 0.14), transparent 30%),
+    linear-gradient(135deg, #0f172a 0%, #1d4ed8 54%, #60a5fa 100%);
 }
 
 .project-theme-grid .spotlight-cover-top {
   background:
-    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px),
-    linear-gradient(135deg, #111827 0%, #0f766e 55%, #84cc16 100%);
-  background-size: auto, 24px 24px, 100% 100%;
+    radial-gradient(circle at 18% 20%, rgba(255, 255, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 78% 68%, rgba(255, 255, 255, 0.16), transparent 30%),
+    linear-gradient(135deg, #052e16 0%, #16a34a 56%, #86efac 100%);
 }
 
 .project-theme-market .spotlight-cover-top {
   background:
     radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.22), transparent 28%),
     linear-gradient(135deg, #111827 0%, #9333ea 52%, #f59e0b 100%);
+}
+
+.project-theme-dance .spotlight-cover-top {
+  background:
+    radial-gradient(circle at 18% 22%, rgba(255, 255, 255, 0.2), transparent 28%),
+    radial-gradient(circle at 78% 70%, rgba(255, 255, 255, 0.18), transparent 32%),
+    linear-gradient(135deg, #450a0a 0%, #dc2626 54%, #fca5a5 100%);
+}
+
+.project-theme-dance .spotlight-panel::after {
+  border-color: rgba(255, 255, 255, 0.34);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.07));
+}
+
+.project-theme-dance .panel-core::after {
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255, 255, 255, 0.24), transparent 32%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(255, 255, 255, 0.07));
 }
 
 .spotlight-panel {
@@ -712,10 +731,18 @@ header {
   bottom: 24px;
 }
 
-.research-meta {
-  margin-bottom: 0.25rem;
-  color: var(--muted);
-  font-size: 0.86rem;
+.research-paper-link {
+  display: inline-flex;
+  width: fit-content;
+  margin-bottom: 0.28rem;
+  color: #2563eb;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.research-paper-link:hover {
+  color: #1d4ed8;
 }
 
 .research-content h3 {
@@ -962,6 +989,24 @@ footer {
   height: 100%;
   border: 0;
   display: block;
+  background: #ffffff;
+}
+
+.modal-image-stage {
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+  background:
+    radial-gradient(circle at 48% 46%, rgba(0, 0, 0, 0.05), transparent 34%),
+    #ffffff;
+}
+
+.modal-stage-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 10px;
   background: #ffffff;
 }
 
